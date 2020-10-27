@@ -9,9 +9,11 @@ interface MapContainerProps {
 	posts: Array<Post>
 }
 
+const australia = { lat: -34.397, lng: 150.644 }
+
 const MapContainer = (props: MapContainerProps) => {
 	const defaultCenter = props.posts.length === 0
-		? { lat: -34.397, lng: 150.644 }
+		? australia
 		: googlify(props.posts[0].location)
 
 	return (

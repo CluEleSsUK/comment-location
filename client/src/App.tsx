@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react"
 import MapContainer from "./MapContainer"
 import Api from "./Api"
 import { Post } from "./Post"
-import "./App.css"
 
 const apiKey = "API_KEY_GOES_HERE"
 const googleProps = {
